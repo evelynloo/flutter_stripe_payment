@@ -75,7 +75,6 @@ class PaymentActivity : AppCompatActivity()
             val params = ConfirmPaymentIntentParams.createWithPaymentMethodId(
                 data!!.paymentMethodId!!,
                 data.clientSecret!!,
-                true
             )
             stripe.confirmPayment(this, params);
 //            finish()
